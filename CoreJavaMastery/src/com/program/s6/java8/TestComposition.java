@@ -24,7 +24,7 @@ public class TestComposition {
 
 	public static void main(String[] args) {
 
-		Car ob = new Car();
+		Car ob = new Car(); // Has - a | relationship 
 
 	}
 }
