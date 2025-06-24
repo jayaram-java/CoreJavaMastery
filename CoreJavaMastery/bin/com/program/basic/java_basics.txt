@@ -1,0 +1,84 @@
+Languages:
+- H - H: English, Hindi
+- H - M: Java, Python programming languages
+
+------------------------------------------------------------
+
+Class:
+A class is a blueprint or collection of objects.
+
+------------------------------------------------------------
+
+Basic Syntax in Java:
+
+Class Syntax:
+access-specifier class ClassName {
+    // variables
+    // methods
+}
+
+Access Specifiers:
+- public
+- protected
+- default (no modifier)
+- private
+
+Example:
+public class UserLogin {
+    // class content
+}
+
+------------------------------------------------------------
+
+Java Keywords:
+Java has 48 reserved keywords (like class, public, static, etc.)
+
+------------------------------------------------------------
+
+Data Types (Primitive Types):
+
+Type      | Size
+----------|------
+byte      | 8 bits
+short     | 16 bits
+int       | 32 bits
+long      | 64 bits
+float     | 32 bits
+double    | 64 bits
+char      | 16 bits (Unicode)
+boolean   | 1 bit (true/false)
+
+------------------------------------------------------------
+
+Variable Syntax:
+access-specifier static dataType variableName = value;
+
+Example:
+public static int a = 10;
+
+------------------------------------------------------------
+
+Method Syntax:
+access-specifier static returnType methodName(parameters) {
+    // method body
+    return value;
+}
+
+Example:
+public static double add() {
+    return 10.5;
+}
+
+------------------------------------------------------------------------------------------------ Environment
+
+| Component | Full Form                | Purpose                       | Includes             |
+| --------- | ------------------------ | ----------------------------- | -------------------- |
+| JIT       | Just-In-Time Compiler    | Boosts performance at runtime | Part of JVM          |
+| JVM       | Java Virtual Machine     | Executes bytecode             | Part of JRE          |
+| JRE       | Java Runtime Environment | Runs Java programs            | JVM + Libraries      |
+| JDK       | Java Development Kit     | Develops & runs Java apps     | JRE + Compiler/Tools |
+
+
+You write code using JDK → compile to bytecode → run via JRE → JVM executes it → JIT optimizes performance.
+
+JDK ➝ JRE ➝ JVM ➝ JIT
