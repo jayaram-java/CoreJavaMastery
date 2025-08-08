@@ -64,6 +64,19 @@ public class ImportanceOfArrayList {
 //- Ideal for read/access operations
 //- Preferred when frequent index-based access is needed
 
+/*
+ArrayList<Integer> numbers = new ArrayList<>();
+
+Here, you're using ArrayList as both the reference type and the object type.
+You can only call methods defined in the ArrayList class on numbers.
+
+List<Integer> numbers = new ArrayList<>();
+
+Here, you're using List (an interface) as the reference type and ArrayList as the object type.
+You can only call methods that are declared in the List interface (which are implemented by ArrayList). */
+
+/*Best practice in Java is to program to an interface, not an implementation.
+It improves flexibility and maintainability.*/
 
 
 
