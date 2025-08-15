@@ -14,8 +14,6 @@ class Key {
 		
 	
 	}
-	
-
 
 	@Override
 	public int hashCode() {
@@ -40,12 +38,15 @@ public class HashMapInternal {
 
 		HashMap<Key, Integer> map = new HashMap<>();
 
-		map.put(new Key("India"), 1);
+		map.put(new Key("Indonasia"), 5);
+		map.put(new Key("India"), 1); // Hashcode will be called
 		map.put(new Key("Canada"), 2);
 
 		System.out.println("Retrieving value for key 'India'");
-		Integer value = map.get(new Key("India"));
+		Integer value = map.get(new Key("India")); // // hashCode + equals will be called
 		System.out.println("Value = " + value);
+		
+		// Each [Key=Value] is a Node
 
 	}
 
