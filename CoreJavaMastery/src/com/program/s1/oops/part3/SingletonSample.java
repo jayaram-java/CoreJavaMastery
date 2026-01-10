@@ -6,7 +6,7 @@ public class SingletonSample {
 
 	private static int num;
 
-	public SingletonSample() {
+	private SingletonSample() {
 		super();
 		System.out.println("Constructor called");
 	}
@@ -50,3 +50,14 @@ public class SingletonSample {
 	}
 
 }
+
+//Singleton constructor is private
+
+//Object creation is controlled inside the class
+
+//Instance is stored in a static variable
+
+//Access is given via a public static method
+
+
+// To restrict object creation from outside and ensure only one instance exists.

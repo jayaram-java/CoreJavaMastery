@@ -40,3 +40,21 @@ public class Ramu {
 	}
 
 }
+
+/*
+main() is static so that the JVM can invoke it without creating an object,
+ making it a reliable entry point for program execution.
+
+
+Use static ➝ static for:
+
+Utility methods
+Constants
+Common helpers
+
+Use non-static methods for:
+
+Business logic
+Data handling
+Object-based behavior*/
+
