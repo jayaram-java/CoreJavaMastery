@@ -3,14 +3,24 @@ package com.program.s2.core.lang.basic;
 public class StringSampleProgram {
 
 	public static void main(String[] args) {
+		
+		// ------------------------------
+		// 1. Immutability example
+		// ------------------------------
 
 		String ob = "Java ";
 		
-		ob.concat("Programming language");
+		ob.concat("Programming language");  // creates new object, ob not changed
 		
 		System.out.println(ob);
 		
-	//	stringMethods();
+		// ------------------------------
+		// Method calls
+		// ------------------------------
+		stringMethods();
+		memoryAllocation();
+		compareStrings();
+		
 		
 	}
 
@@ -22,8 +32,11 @@ public class StringSampleProgram {
 		String userName = firstName.concat(" ").concat(lastName);
 
 		System.out.println(userName);
-
 		System.out.println(userName.toUpperCase());
+		System.out.println(userName.toLowerCase());
+		System.out.println(userName.length());
+		System.out.println(userName.charAt(2));
+		System.out.println(userName.contains("Ram"));
 	}
 
 	public static void memoryAllocation() {
@@ -51,13 +64,28 @@ public class StringSampleProgram {
 			System.out.println("Different memory location");
 		}
 	}
+	
+	// ------------------------------
+	// == vs equals()
+	// ------------------------------
+	public static void compareStrings() {
+
+		String a = "Java";
+		String b = new String("Java");
+
+		System.out.println(a == b);        // false (memory comparison)
+		System.out.println(a.equals(b));   // true (content comparison)
+	}
 
 }
 
-// String is a sequence of characters.
-
-// String is immutable. Object state can't be changed.
-
-// Java.lang package
-
-// 
+/*
+IMPORTANT POINTS:
+-----------------
+1. String is a sequence of characters.
+2. String is immutable – object state cannot be changed.
+3. Stored in String Constant Pool (SCP) when created using literals.
+4. == compares memory reference.
+5. equals() compares content.
+6. String class belongs to java.lang package.
+*/

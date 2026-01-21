@@ -26,6 +26,7 @@ public class ExceptionHandlingPrograms {
 
 }
 
+//An exception is an unexpected event that occurs during the execution of a program, which disrupts the normal flow of the program.
 
 
 //try block - Monitor the error

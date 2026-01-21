@@ -2,7 +2,7 @@ package com.program.s2.core.lang.exception;
 
 public class Voter {
 
-	public void checkEligibility(int age) throws InvalidVoterException,NullPointerException,ArrayIndexOutOfBoundsException {
+	public void checkEligibility(int age) throws InvalidVoterException{
 
 		if (age < 18) {
 

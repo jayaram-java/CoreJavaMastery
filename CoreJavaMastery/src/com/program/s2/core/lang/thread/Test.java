@@ -2,44 +2,42 @@ package com.program.s2.core.lang.thread;
 
 public class Test extends Thread {
 
-	public void run() {
+    @Override
+    public void run() {
 
-		for (int i = 0; i <= 5; i++) {
+        for (int i = 0; i <= 5; i++) {
+            System.out.println(Thread.currentThread().getName() + " count = " + i);
+        }
+    }
 
-			System.out.println(Thread.currentThread() + " count = " + i);
+    public static void main(String[] args) {
 
-		}
+        Test t1 = new Test();
+        Test t2 = new Test();
+        Test t3 = new Test();
 
-	}
+        t1.start(); // Thread-0
 
-	public static void main(String[] args) {
+        try {
+            t1.join(); // wait until Thread-0 completes
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
-		Test ob = new Test();
+        t2.start(); // Thread-1
 
-		ob.start(); // first thread // Thread - 0
+        try {
+            t2.join(); // wait until Thread-1 completes
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
-		try {
-			ob.join(); // waits for a thread to die
-		} catch (InterruptedException e) {
-
-			e.printStackTrace();
-		}
-
-		Test ob1 = new Test();
-
-		ob1.start(); // Thread - 1
-
-		try {
-			ob.join();
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-		Test ob2 = new Test();
-
-		ob2.start(); // Thread - 2
-
-	}
-
+        t3.start(); // Thread-2
+    }
 }
+/*
+join()
+
+Makes current thread wait
+Used when one thread depends on another
+*/

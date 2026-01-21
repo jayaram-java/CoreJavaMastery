@@ -26,3 +26,13 @@ public class MutablePrograms {
 	}
 
 }
+
+/*
+IMPORTANT POINTS:
+-----------------
+
+1. StringBuilder and StringBuffer are mutable.
+2. StringBuilder is faster but not thread-safe.
+3. StringBuffer is thread-safe.
+
+*/
