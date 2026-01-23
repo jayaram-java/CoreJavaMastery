@@ -6,7 +6,7 @@ public class Voter {
 
 		if (age < 18) {
 
-			throw new InvalidVoterException("Voter is not eligible to vote. Age must be 18 or elder");
+			throw new InvalidVoterException("Voter is not eligible to vote. Age must be 18 or above");
 
 		} else {
 			System.out.println("Voter is eligible to vote");
