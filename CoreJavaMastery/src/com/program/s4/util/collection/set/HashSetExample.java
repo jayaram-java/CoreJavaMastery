@@ -1,4 +1,4 @@
-package com.program.s4.util.set;
+package com.program.s4.util.collection.set;
 
 import java.util.HashSet;
 

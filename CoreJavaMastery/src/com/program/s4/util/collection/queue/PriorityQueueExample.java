@@ -1,4 +1,4 @@
-package com.program.s4.util.queue;
+package com.program.s4.util.collection.queue;
 
 import java.util.PriorityQueue;
 

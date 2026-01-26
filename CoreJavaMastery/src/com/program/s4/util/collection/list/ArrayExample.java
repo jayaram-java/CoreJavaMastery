@@ -1,4 +1,4 @@
-package com.program.s4.util.list;
+package com.program.s4.util.collection.list;
 
 import java.util.Arrays;
 
