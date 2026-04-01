@@ -82,7 +82,7 @@ public class StringSampleProgram {
 /*
 IMPORTANT POINTS:
 -----------------
-1. String is a sequence of characters.
+1. String is a sequence of characters. String is final class
 2. String is immutable – object state cannot be changed.
 3. Stored in String Constant Pool (SCP) when created using literals.
 4. == compares memory reference.

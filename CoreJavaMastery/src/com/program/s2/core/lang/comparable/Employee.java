@@ -39,3 +39,15 @@ public class Employee implements Comparable<Employee> {
 
 //Use Comparable
 //→ When there is one natural way to sort (salary, id)
+
+/*
+| Feature                  | Comparable         | Comparator                |
+| ------------------------ | ------------------ | ------------------------- |
+| Package                  | `java.lang`        | `java.util`               |
+| Method                   | `compareTo()`      | `compare()`               |
+| Sorting Type             | Natural sorting    | Custom sorting            |
+| Location                 | Inside the class   | Separate class            |
+| Number of sorting logics | Only one           | Multiple                  |
+| Example                  | Sort Student by ID | Sort Student by Name, Age |
+*/
+

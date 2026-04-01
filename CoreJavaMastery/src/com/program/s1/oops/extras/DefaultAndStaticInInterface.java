@@ -4,11 +4,11 @@ interface Default {
 
 	void animal();
 
-	default void run() {
+	default void run() { // has body, can be overriden , called via object
 		System.out.println("It is default run");
 	}
 
-	static void sleep() {
+	static void sleep() { // Has body , cannot be overridden, called via interface name
 		System.out.println("Sleeping");
 	}
 }

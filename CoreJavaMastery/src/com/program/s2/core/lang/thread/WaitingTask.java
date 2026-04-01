@@ -73,4 +73,14 @@ notify()
 
 Wakes one waiting thread 
 Does NOT release lock immediately
+
+| Feature      | `sleep()`                   | `wait()`                         |
+| ------------ | --------------------------- | -------------------------------- |
+| Class        | Thread class                | Object class                     |
+| Purpose      | Pause thread for fixed time | Wait until notified              |
+| Lock Release | ❌ Does NOT release lock     | ✅ Releases lock                  |
+| Wake Up      | After time completes        | After `notify()` / `notifyAll()` |
+| Usage        | Timing control              | Inter-thread communication       |
+
 */
+
