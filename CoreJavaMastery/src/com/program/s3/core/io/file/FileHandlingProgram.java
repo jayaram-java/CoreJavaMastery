@@ -26,3 +26,9 @@ public class FileHandlingProgram {
 	}
 
 }
+
+// SSH File Transfer protocol(SFTP) is a secure way to transfer files between computers over an ssh connection.
+
+// connect to sftp servers to fetch images
+
+// mobile app -> temeos quantum/kony fabric -> java integration service -> sftp server

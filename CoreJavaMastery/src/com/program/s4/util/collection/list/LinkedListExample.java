@@ -33,6 +33,10 @@ public class LinkedListExample {
 
 // Properties
 
+// doubly linked list - internal linked list
+
+// single list(single way) vs doubly linked list(prev next)
+
 // LinkedList internally uses a doubly linked list to store the element.
 //- Allows heterogeneous data types
 //- Allows null values
